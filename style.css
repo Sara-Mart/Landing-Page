@@ -164,7 +164,7 @@ footer{
         position: fixed;
         width: 30%;
         height: 100vh;
-        backdrop-filter:blur(8px);
+        background-color: var(--secundary);
         top: 10vh;
         left: -100%;
         text-align: left;
@@ -377,4 +377,19 @@ textarea{
 .Indesign iframe {
   flex: 0 1 calc(50% - 20px); /* 2 por fila, con espacio */
   height: 450px;
+}
+
+@media(max-width:767px){
+
+    h1{
+       font-size: 2rem; 
+    }
+
+    .boton input{
+        font-size: 12px;
+    }
+
+    .Indesign iframe{
+        width: 200px;
+    }
 }
